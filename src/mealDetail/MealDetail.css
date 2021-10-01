@@ -1,0 +1,17 @@
+.meal-detail{
+    border-radius: 10px;
+}
+
+
+/* Mobile device */
+@media only screen and (max-width:688px) {
+    
+.meal-detail{
+    width: 80% !important;
+}
+}
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+.meal-detail {
+    width: 50% !important;
+}
+}
