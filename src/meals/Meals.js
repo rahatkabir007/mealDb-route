@@ -24,7 +24,7 @@ const Meals = () => {
     const handleSearch = event => {
         const searchText = event.target.value;
         setSearch(searchText);
-        const matchedMeals = meals.filter(meal => meal.strMeal.toLowerCase().includes(searchText.toLowerCase()));
+        const matchedMeals = meals?.filter(meal => meal.strMeal.toLowerCase().includes(searchText.toLowerCase()));
         setDisplayMeals(matchedMeals);
 
     }
@@ -39,7 +39,7 @@ const Meals = () => {
                 </Form>
                 <Row xs={2} md={2} lg={4} className="g-4">
                         {
-                            displayMeals.map(meal => <Meal key={meal.idMeal} meal={meal}></Meal>)
+                            displayMeals?.map(meal => <Meal key={meal.idMeal} meal={meal}></Meal>)
                         }
                 </Row>
                
