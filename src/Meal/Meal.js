@@ -5,9 +5,6 @@ import { Link } from 'react-router-dom';
 const Meal = (props) => {
     const { idMeal,strMeal, strMealThumb, strCategory } = props.meal || {};
 
-
-
-
     return (
         <div >
             <Col>
